@@ -6,6 +6,12 @@
   </head>
   <body>
     <h1>说明</h1>
+    <p><a moz-do-not-send="true" href="index.html">Back</a><br>
+    </p>
+    <p><br>
+      <i><b>*本分享原则上不直接提供资源本身*</b></i><font size="-2"><br>
+        当然，这话我自己都不信</font><br>
+    </p>
     <h2>资源获取</h2>
     <p>本分享以保持分享内容长期存活可用为主要目标，没有考虑下载速度和便捷程度等问题。基于此目的，本分享使用的分享形式需要保证存储文件的网
       站尽可能长期存活，尽量不依赖分享者账号，获取资源时限制尽可能少等要求。<br>
@@ -36,6 +42,8 @@
         href="https://www.bandisoft.com/bandizip/">Bandizip（官网）</a><br>
       <a moz-do-not-send="true"
         href="https://www.win-rar.com/start.html?&amp;L=7">WinRAR（官网）</a><br>
+      <a moz-do-not-send="true"
+        href="https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver">ZArchiver（GooglePlay）</a><br>
     </p>
     <h2>游戏运行</h2>
     <h3>PC（Windows）</h3>
@@ -44,7 +52,23 @@
         href="https://www.bilibili.com/read/cv12196499">KID社游戏PC版整理和运行状况
         报告（Bilibili）</a><br>
     </p>
-    <h3>FC、GameBoy、WonderSwan、NeoGeoPocket</h3>
+    <h3>FC/NES</h3>
+    <p>测试所用模拟器为FCEUX和qFCEUX。游戏均可正常运行。<br>
+      模拟器可以加载NES文件和FDS文件。<br>
+      加载FDS磁碟机游戏需要额外的BIOS文件，参考 <a moz-do-not-send="true"
+        href="https://fceux.com/web/help/FamicomDiskSystem.html">link（FCEUX
+        官网）</a>。 原则上BIOS文件需要用户自行从真机中Dump，下同。<br>
+      <a moz-do-not-send="true" href="https://fceux.com/web/home.html">FCEUX（官
+        网）</a> <a moz-do-not-send="true"
+        href="https://github.com/TASEmulators/fceux">FCEUX（Github）</a><br>
+    </p>
+    <h3>SFC/SNES</h3>
+    <p>测试所用模拟器为BSNES。SFC格式的游戏可以正常运行。<br>
+      模拟器理论上还可以运行BS-X游戏，但由于一些原因无法运行。<br>
+      <a moz-do-not-send="true"
+        href="https://github.com/bsnes-emu/bsnes">BSNES（Github）</a><br>
+    </p>
+    <h3>GameBoy、WonderSwan、NeoGeoPocket</h3>
     <p>未测试。理论上可用。<br>
     </p>
     <h3>Sega Saturn</h3>
@@ -57,43 +81,63 @@
     <p>测试所用的模拟器为DuckStation。测试了《Infinity》、《镰鼬之夜》等几个游戏，可以正常运行。<br>
       模拟器需要另行加载BIOS文件。<br>
       <a moz-do-not-send="true" href="https://www.duckstation.org/">DuckStation（官
-        网）</a> <br>
+        网）</a>&nbsp; <a moz-do-not-send="true"
+href="https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation">DuckStation（GooglePlay）</a>
     </p>
     <h3>Sega DreamCast</h3>
     <p>测试所用的模拟器为NullDC。测试了《Ever17》（BIN/CUE）、《Ever17 Premium
       Edition》（CDI）、《Erde》（BIN/CUE）等几个游戏，可以正常运行。由于这个模拟器只支持CDI格式或GDI格式，不支持BIN
-      /CUE格式，所以还需要用额外的工具gdidrop来将BIN/CUE格式转化为GDI格式。<br>
+      /CUE格式（redump标准），所以还需要用额外的工具gdidrop来将BIN/CUE格式转化为GDI格式。<br>
       模拟器需要另行加载BIOS文件。<br>
       <a moz-do-not-send="true" href="https://github.com/skmp/nulldc">NullDC（GitHub）</a>（只
       有源码） <a moz-do-not-send="true"
-        href="https://coolrom.com.au/emulators/dc/89/nullDC.php">NullDC（CoolROM）</a><br>
+        href="https://coolrom.com.au/emulators/dc/89/nullDC.php">NullDC（CoolROM）</a>
+      <a moz-do-not-send="true" href="https://segaretro.org/NullDC">NullDC（官
+        网）</a><br>
       <a moz-do-not-send="true"
         href="https://github.com/feyris-tan/gdidrop">gdidrop（GitHub）</a><br>
     </p>
     <h3>PlayStation2</h3>
     <p>测试所用模拟器为PCSX2。测试了多个游戏，均可正常运行。其中《Never7
       SuperLite1500版》由于未知原因会卡在开头的启动动画，需要禁用MPEG解码才能正常启动。<br>
+      PCSX2近期开始推出了1.7版本更新，在新版本中有些游戏反而不能正常运行，如出现此问题请先尝试使用1.6版本。<br>
+      目前安卓端也推出了模拟器AetherSX2。Bug比较多，已经能正常运行大部分游戏。<br>
+      本分享中的所有游戏均为ISO格式，在以上两个模拟器中被支持。AetherSX2模拟器在推广使用CHD格式的游戏，此格式能提供相比
+      ISO格式更高的压缩率和读取速度，PCSX2 1.7版本也支持了这一格式。<br>
       模拟器需要另行加载BIOS文件。<br>
       <a moz-do-not-send="true" href="https://pcsx2.net">PCSX2（官网）</a> <a
         moz-do-not-send="true"
         href="https://coolrom.com.au/emulators/ps2/57/PCSX2.php">PCSX2（CoolROM）</a><br>
+      <a moz-do-not-send="true" href="https://www.aethersx2.com/">AetherSX2（官
+        网）</a> <a moz-do-not-send="true"
+href="https://play.google.com/store/apps/details?id=xyz.aethersx2.android">AetherSX2（GooglePlay）</a><br>
     </p>
     <h3>PlayStation Portable</h3>
-    <p>测试所用模拟器为PPSSPP。测试了多个游戏，均可正常运行。<br>
+    <p>测试所用模拟器为PPSSPP。模拟器已较为成熟。测试了多个游戏，均可正常运行。<br>
       <a moz-do-not-send="true" href="https://ppsspp.org/">PPSSPP（官网）</a>
       <a moz-do-not-send="true"
         href="https://coolrom.com.au/emulators/psp/102/PPSSPP.php">PPSSPP（CoolROM）</a><br>
     </p>
     <h3>Xbox360</h3>
-    <p>测试所用模拟器为xenia。测试了几乎所有收集到的游戏。其中《Chaos Head
-      Noah》因为无法创建存档而无法继续游戏，《Disorder6》能进行游戏，但是无法加载图片，相当于无法进行游戏。模拟器能加载GOD格式、ISO
-      格式、unpacked（也称xex、jtag）格式的游戏。<br>
+    <p>测试所用模拟器为xenia。测试了几乎所有收集到的游戏。其中《Disorder6》、《Muv-Luv》系列等rUGP引擎的游戏能进
+      入游戏，但是无法加载图片，只能盲打，相当于无法进行游戏。<br>
+      Xbox360游戏常用ISO格式、GOD格式、XEX格式、XBLA格式。ISO格式为光盘镜像格式，可细分为redump标准的镜像和从
+      GOD、XEX格式重构的镜像。redump标准的ISO镜像大小约为7.3G，压缩后约6.5~6.9G，理论上完整保留了光盘中的所有信
+      息和冗余。重构镜像体积较小，一般也能包含游戏的所有有效信息，但有时无法正确解压提取内容。如果需要提取游戏资源建议使用redump镜
+      像。Xbox360的ISO格式是一种特殊的格式，与其他平台的ISO格式大有不同，不能使用一般解压缩工具或虚拟光驱打开，也不要以此判断
+      镜像是否损坏。GOD格式全称Games On
+      Demand，是游戏存储在Xbox360的硬盘上的格式，其形式类似于分卷压缩，一般体积略小于ISO格式的重构镜像和XEX格式。此格式可使用工具从
+      ISO格式转化得到，或使用工具转化为ISO格式重构镜像。XEX格式实际上指Xbox360平台的可执行文件格式，相当于Windows下
+      的EXE格式，是游戏真实存在的形式，可从ISO格式提取得到。此格式的游戏一般通过JTAG破解得到，所以有时也称为JTAG格式。
+      XBLA格式全称Xbox Live Arcade，是一类只能从网络商店下载的游戏，与另三种格式无关。<br>
+      模拟器能加载GOD格式、ISO 格式、XEX（收集中称为unpacked）格式的游戏。XBLA格式似乎也能正常运行，但无法联机对战。<br>
       此后的模拟器会开始非常吃性能，需要较高的电脑配置。<br>
       <a moz-do-not-send="true" href="https://xenia.jp/">xenia（官网）</a><br>
     </p>
     <h3>PlayStation3</h3>
     <p>测试所用的模拟器为RPCS3。测试了几乎所有收集到的游戏，在最新版本下均可正常运行。模拟器能加载unpacked格式和PKG格式的
-      游戏。对于PKG格式的游戏，需要先安装rap文件用于解密，再安装PKG文件。<br>
+      游戏。对于PKG格式的游戏，需要先安装rap文件用于解密，再安装PKG文件。PS3平台也有redump标准的ISO格式镜像，但在此标
+      准下镜像会保留加密，不便使用，此格式的分享也很少，故没有收集。<br>
       模拟器需要另行加载系统固件PS3UPDAT.PUP，可前往PlayStation官网下载。不同地区的版本可能有所不同，未具体测试。<br>
       <a moz-do-not-send="true" href="https://rpcs3.net/">RPCS3（官网）</a><br>
       <a moz-do-not-send="true"
@@ -106,7 +150,13 @@ href="https://www.playstation.com/ja-jp/support/hardware/ps3/system-software/">P
     </p>
     <h3>PlayStation Vita</h3>
     <p>测试所用的模拟器为Vita3k。这个模拟器仍处于初级阶段，游戏稍微复杂一点就可能无法运行，多数游戏应该无法正常通关。在游戏中快进的
-      话有概率闪退，注意及时保存。几个可用或部分可用的游戏列举如下。</p>
+      话有概率闪退，注意及时保存。<br>
+      模拟器目前更新到了0.1.5版本，可用性有了不少提升，应该有不少游戏已经可以基本正常的运行。<br>
+    </p>
+    <p>PCSG01021 [OCCULTIC;NINE]（日版） 可以进入游戏。文字无法显示，画面显示有一些问题。<br>
+      PCSG00995 [CHAOS;CHILD らぶchu☆chu!!]
+      （日版，可打汉化补丁）可以进行游戏。视频、音频bug和一个固定闪退bug已解决。动画效果稍有问题。</p>
+    <p>0.1.3版本时测试的几个可用或部分可用的游戏列举如下。</p>
     <p>PCSG00995 [CHAOS;CHILD らぶchu☆chu!!]
       （日版，可打汉化补丁）禁用视频解码后可进入游戏。画面正常，音频无法正常播放，听起来像是噪音一样。经常莫名其妙闪退。<br>
       PCSG01183 [メモリーズオフ -Innocent Fille-]（日版） 可以进行游戏。柚莉DLC未测试。<br>
@@ -122,6 +172,34 @@ href="https://www.playstation.com/ja-jp/support/hardware/ps3/system-software/">P
       模拟器需要另行加载系统固件PSP2UPDAT.PUP。不同地区的版本可能有所不同。<br>
       <a moz-do-not-send="true" href="https://vita3k.org/">Vita3k（官网）</a>
       <a moz-do-not-send="true" href="https://github.com/Vita3K/Vita3K">Vita3k（GitHub）</a><br>
+    </p>
+    <h3>Nintendo Switch</h3>
+    <p>目前有Ryujinx和yuzu两个主流模拟器。两个模拟器的表现可以说不相上下。如果你需要在较低性能的设备上运行游戏，推荐使用
+      yuzu的Vulkan模式，以获得较为流畅的体验。如果需要运行含有大量3D建模、需要文本输入的游戏，推荐使用Ryujinx以避免一些
+      Bug。一般推荐同时安装这两个模拟器，在其中一个出现问题时可以再试一下另一个。<br>
+      Switch游戏常使用XCI格式和NSP格式。XCI格式接近于卡带镜像，可以在一个文件内同时包含游戏本体、更新补丁、DLC等，甚至可
+      以在一个XCI文件里包含多个游戏。NSP格式接近于游戏程序包，一般只能包含一个游戏本体或一个更新补丁。两种格式间可以几乎无损的转换、
+      整合、分解。模拟器可以读取或安装XCI格式的游戏整合包，读取或安装NSP格式的游戏本体，但NSP格式的更新补丁、DLC必须安装后才能
+      运行。另有XCZ、NSZ格式，由以上两种格式压缩得到，可以无损解压还原，模拟器不能直接读取这种格式。综上，Switch游戏不必区分格
+      式。<br>
+      模拟器需要另行加载系统固件和游戏密钥。<br>
+      <a moz-do-not-send="true" href="https://ryujinx.org/">Ryujinx（官网）</a>
+      <a moz-do-not-send="true" href="https://yuzu-emu.org/">yuzu（官网）</a>
+      <a moz-do-not-send="true" href="https://pineappleea.github.io/">yuzu（pinEApple）</a>
+    </p>
+    <h3>各个平台固件获取</h3>
+    <p>从网络获取系统固件可能引发版权问题，请自行考虑。<br>
+      <a moz-do-not-send="true" href="https://darthsternie.net/">Darthsternie's
+
+        Firmware and Exploits Archive</a><br>
+      <a moz-do-not-send="true" href="https://coolrom.com.au/bios/">CoolROM</a><br>
+      <a moz-do-not-send="true"
+        href="https://github.com/archtaurus/RetroPieBIOS">RetroPieBIOS（Github）</a><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+      <a moz-do-not-send="true" href="index.html">Back</a><br>
     </p>
   </body>
 </html>
